@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    tools:actionBarNavMode="list">
+    <TextView
+        p1:text="Enter Your Test Information:"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView2"
+        p1:gravity="center"
+        p1:paddingBottom="10dp"
+        p1:paddingTop="5dp" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center">
+        <TextView
+            p1:text="Hours"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="80dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView2"
+            p1:gravity="center" />
+        <TextView
+            p1:text="Minutes"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="80dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView3"
+            p1:layout_marginLeft="20dp"
+            p1:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center">
+        <NumberPicker
+            p1:layout_width="80dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/testHoursNumberPicker" />
+        <NumberPicker
+            p1:layout_width="80dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/testMinutesNumberPicker"
+            p1:layout_marginLeft="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_marginTop="10dp">
+        <TextView
+            p1:text="# of Questions:"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView4"
+            p1:paddingLeft="10dp" />
+        <EditText
+            p1:inputType="numberSigned"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/totalQuestionsTextBox"
+            p1:numeric="integer"
+            p1:paddingRight="10dp"
+            p1:maxLength="3"
+            p1:focusable="true"
+            p1:focusableInTouchMode="true"
+            p1:digits="0123456789" />
+    </LinearLayout>
+    <Button
+        p1:text="Start Timer"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/startTimerButton"
+        p1:layout_marginTop="10dp" />
+</LinearLayout>
